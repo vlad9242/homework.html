@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>чекліст</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 20px auto;
+      width: 300px;
+    }
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 6px;
+    }
+
+    li:nth-child(odd) {
+      background-color: #e6f2ff;
+    }
+
+    li:nth-child(even) {
+      background-color: #cce6ff;
+    }
+
+    .done {
+      background-color: #d9d9d9 !important;
+      text-decoration: line-through;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .check {
+      color: green;
+    }
+
+    .nocheck {
+      color: gray;
+    }
+
+    .delete {
+      color: red;
+      font-weight: bold;
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+    <h2>My To Do List</h2>
+  <ul>
+    <li><span class="icon nocheck">☐</span> Hit the gym <span class="delete">✖</span></li>
+
+    <li class="done"><span class="icon check">☑</span> Pay bills <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Meet John <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Buy eggs <span class="delete">✖</span></li>
+
+    <li class="done"><span class="icon check">☑</span> Read a book <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Organize office <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Eat dinner <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Buy apples <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Meet George <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Feed the cat <span class="delete">✖</span></li>
+
+    <li class="done"><span class="icon check">☑</span> Write a letter <span class="delete">✖</span></li>
+
+    <li><span class="icon nocheck">☐</span> Run 1 km <span class="delete">✖</span></li>
+    
+</body>
+</html>

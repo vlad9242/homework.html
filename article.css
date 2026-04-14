@@ -1,0 +1,27 @@
+.post {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+.post img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 8px;
+    float: left;
+}
+figure {
+    margin: 20px 0;
+}
+figure img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+figcaption {
+    font-size: 14px;
+    color: rgb(48, 44, 44);
+    margin-top: 8px;
+    text-align: center;
+}

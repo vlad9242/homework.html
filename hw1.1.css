@@ -1,0 +1,24 @@
+ body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    h1 {
+      text-align: center;
+    }
+    .player {
+      margin: 20px 0;
+      padding: 15px;
+      background: #fff;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    .cards {
+      font-size: 24px;
+      letter-spacing: 10px;
+    }
+    .clubs { color: green; }
+    .diamonds { color: red; }
+    .hearts { color: red; }
+    .spades { color: black; }
