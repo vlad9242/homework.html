@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            padding: 50px;
+        }
+
+        .menu {
+            width: 300px;
+            background-color: #808080;
+        }
+
+        .menu-item {
+            display: block;
+            padding: 20px 30px;
+            color: white;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        .menu-item:hover {
+            background-color: #606060;
+        }
+
+        .menu-item img {
+            width: 30px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 30px;
+        }
+
+        .menu-item span {
+            vertical-align: middle;
+        }
+        
+        .active {
+            background-color: #606060;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <a href="#" class="menu-item">
+            <img src="https://img.icons8.com/color/96/edit--v1.png">
+            <span>Edit</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="https://img.icons8.com/color/96/like--v1.png">
+            <span>Favorites</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="https://img.icons8.com/color/96/clock--v1.png">
+            <span>History</span>
+        </a>
+        <a href="#" class="menu-item active">
+            <img src="https://img.icons8.com/color/96/shield.png">
+            <span>Security</span>
+        </a>
+        <a href="#" class="menu-item">
+            <img src="https://img.icons8.com/color/96/settings--v1.png">
+            <span>Settings</span>
+        </a>
+    </div>
+
+</body>
+</html>

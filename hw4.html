@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: sans-serif;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            padding: 20px;
+        }
+
+        .circle {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #205c58;
+            border-radius: 50%;
+            position: relative;
+            margin: 50px auto;
+        }
+        
+        .circle::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 15px;
+            height: 15px;
+            background-color: #205c58;
+            border-radius: 50%;
+        }
+
+        .harrow, .marrow, .sarrow {
+            width: 5px;
+            height: 80px;
+            background-color: #205c58;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform-origin: center bottom;
+        }
+
+        .harrow {          
+            animation:  20s linear rotateHarrow infinite;
+            height: 60px;
+            width: 8px;
+            border-radius: 4px;
+        }
+
+        .marrow {
+            animation:  10s linear rotateHarrow infinite;
+            height: 70px;
+            width: 6px;
+            border-radius: 3px;
+        }
+
+        .sarrow {
+            animation:  5s linear rotateHarrow infinite;
+            width: 3px;
+             height: 90px;
+                border-radius: 1.5px;
+        }
+
+
+        @keyframes rotateHarrow {
+            from {
+                transform:translate(-50%, -100%) rotate(0deg);
+            }
+            to {
+                transform: translate(-50%, -100%) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle">
+        <div class="harrow"></div>
+        <div class="marrow"></div>
+        <div class="sarrow"></div>
+    </div>
+</body>
+</html>
